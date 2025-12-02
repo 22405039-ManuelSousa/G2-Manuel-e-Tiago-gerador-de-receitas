@@ -24,4 +24,4 @@ Este projeto é uma aplicação Java que utiliza um Grande Modelo de Linguagem (
 
 * **Manuel Sousa** - a22405039
 * **Tiago Santos** - a22403423
-  ![](diagrama-uml-gerador-de-receitas.png?raw=true "Diagrama UML")
+  ![](docs/diagrama-uml-gerador-de-receitas.png?raw=true "Diagrama UML")

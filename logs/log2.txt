@@ -1,0 +1,72 @@
+DEBUG (JSON RAW):
+{
+"id":"chatcmpl-CiIvb5Lqun5JpFmEV01KHyHDj9msD",
+"object":"text_completion","created":1764675227,
+"model":"gpt-4-turbo-2024-04-09",
+"choices":[{"finish_reason":"stop","index":0,"text":
+"1. Smoothie de mirtilo e morango\n2.
+ Milkshake de frutas vermelhas\n3.
+ Sorvete caseiro de morango e mirtilo\n4.
+  Iogurte natural com mirtilos e morangos\n5.
+  Pudim de chia com mirtilo e morango","logprobs":null}],
+  "usage":{
+  "completion_tokens":69,
+  "prompt_tokens":67,
+  "total_tokens":136,
+  "completion_tokens_details":
+  {
+  "accepted_prediction_tokens":0,
+  "audio_tokens":0,
+  "reasoning_tokens":0,
+  "rejected_prediction_tokens":0
+  },
+  "prompt_tokens_details":{
+  "audio_tokens":0,
+  "cached_tokens":0,
+  "text_tokens":null,
+  "image_tokens":null}
+  }
+  }
+DEBUG (JSON RAW):
+{
+"id":"chatcmpl-CiIw0okqJBwCOkHthkOoOXRBxlCvY",
+"object":"text_completion",
+"created":1764675252,
+"model":"gpt-4-turbo-2024-04-09",
+"choices":
+[{"finish_reason":"stop","index":0,"text":"
+### Receita: Sorvete Caseiro de Morango e Mirtilo\n\n**Ingredientes:**\n-
+2 xícaras de morangos frescos, limpos e cortados ao meio\n- 1 xícara de mirtilos frescos\n-
+1/2 xícara de açúcar (pode ajustar conforme preferência)\n- 2 colheres de sopa de suco de limão\n-
+ 2 xícaras de leite integral ou leite de coco para uma versão vegana\n\n**Material Necessário:**\n-
+ Liquidificador ou processador de alimentos\n- Recipiente para congelar\n- Espátula\n\n**Modo de Preparo:**\n\n1.
+ **Preparação da Fruta:**\n   - Em uma tigela média, misture os morangos e os mirtilos com o açúcar e o suco de limão.
+  Deixe marinar por cerca de 30 minutos, isso ajudará a extrair os sucos das frutas e dissolver o açúcar.\n\n2.
+   **Processamento:**\n   - Transfira as frutas marinadas para um liquidificador ou processador de alimentos.
+    Adicione o leite e bata até que a mistura seja homogênea e as frutas estejam completamente trituradas.\n\n3.
+     **Congelamento:**\n   - Despeje a mistura em um recipiente adequado para congelar. Cubra e coloque no congelador.\n
+      - Para melhorar a textura do sorvete, mexa vigorosamente a mistura a cada 30 minutos durante as primeiras 2 horas no congelador.
+      Use uma espátula ou bata na batedeira para quebrar quaisquer cristais de gelo que se formem.\n\n4. **Servindo:**\n
+      - Deixe o sorvete no congelador até firmar completamente, o que geralmente leva cerca de 4 a 5 horas.\n
+        - Retire o sorvete do congelador alguns minutos antes de servir para facilitar a formação de bolas.\n
+         - Sirva em taças ou cones de sua preferência. Pode decorar com frutas frescas adicionais, se desejar.\n\n
+         **Dicas Adicionais:**\n- Se desejar um sorvete mais cremoso, você pode substituir parte do leite por creme de leite.\n-
+         Para manter o sabor fresco das frutas, evite cozinhar as frutas antes de congelar.\n\n
+         Este sorvete caseiro de morango e mirtilo é perfeito para um refresco no verão,
+         oferecendo uma deliciosa escapada para os sabores naturais das frutas vermelhas.","logprobs":null}],
+         "usage":{
+         "completion_tokens":598,
+         "prompt_tokens":146,
+         "total_tokens":744,
+         "completion_tokens_details":{
+         "accepted_prediction_tokens":0,
+         "audio_tokens":0,"reasoning_tokens":0,
+         "rejected_prediction_tokens":0},
+         "prompt_tokens_details":{
+         "audio_tokens":0,
+         "cached_tokens":0,
+         "text_tokens":null,
+         "image_tokens":null}
+         }
+         }
+

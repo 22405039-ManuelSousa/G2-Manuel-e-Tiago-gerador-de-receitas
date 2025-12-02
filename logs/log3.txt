@@ -1,0 +1,36 @@
+DEBUG (JSON RAW):
+{"id":"chatcmpl-CiJ4l4n00AwFOZVAFWByzAyqQpe5a","object":"text_completion","created":1764675795,"model":"gpt-4-turbo-2024-04-09",
+"choices":[{"finish_reason":"stop","index":0,"text":"1. Macarrão com queijo clássico\n2. Salada de macarrão com queijo\n3. Macarrão ao alho e queijo\n4. Macarrão com queijo gratinado\n5. Sopa de macarrão com queijo","logprobs":null}],
+"usage":
+{"completion_tokens":60,
+"prompt_tokens":63,
+"total_tokens":123,
+"completion_tokens_details":
+{"accepted_prediction_tokens":0,
+"audio_tokens":0,
+"reasoning_tokens":0,
+"rejected_prediction_tokens":0},
+"prompt_tokens_details":
+{"audio_tokens":0,
+"cached_tokens":0,
+"text_tokens":null,
+"image_tokens":null}}}
+
+DEBUG (JSON RAW):
+{"id":"chatcmpl-CiJ4yOHq5EEnSthPd3QsSj0z0g1um","object":"text_completion","created":1764675808,"model":"gpt-4-turbo-2024-04-09",
+"choices":[{"finish_reason":"stop","index":0,"text":"### Receita: Macarrão com Queijo Clássico (Mac and Cheese)\n\n#### Ingredientes:\n- 250g de macarrão (pode ser cotovelo, penne ou o de sua preferência)\n- 2 colheres de sopa de manteiga\n- 2 colheres de sopa de farinha de trigo\n- 2 xícaras de leite\n- 200g de queijo cheddar ralado (pode substituir por outro tipo de queijo amarelo se preferir)\n- Sal e pimenta-do-reino a gosto\n- Noz-moscada ralada a gosto (opcional)\n- 1/2 xícara de queijo parmesão ralado para gratinar (opcional)\n\n#### Modo de Preparo:\n\n1. **Cozinhe o Macarrão:**\n   - Em uma panela grande, ferva água com um pouco de sal.\n   - Adicione o macarrão e cozinhe de acordo com as instruções da embalagem até estar al dente.\n   - Escorra e reserve.\n\n2. **Prepare o Molho de Queijo:**\n   - Em uma panela média, derreta a manteiga em fogo médio.\n   - Adicione a farinha e mexa bem durante cerca de 2 minutos para formar um roux (mistura de manteiga e farinha que ajuda a engrossar o molho).\n   - Gradualmente, adicione o leite, mexendo constantemente para evitar grumos. Continue cozinhando e mexendo até que o molho comece a engrossar (isso pode levar cerca de 5 minutos).\n   - Baixe o fogo e adicione o queijo cheddar ralado. Mexa até o queijo derreter completamente e o molho ficar homogêneo.\n   - Tempere com sal, pimenta e noz-moscada a gosto.\n\n3. **Combine o Macarrão com o Molho:**\n   - Adicione o macarrão cozido ao molho de queijo, misturando bem para que todo o macarrão seja coberto pelo molho.\n   - Prove e ajuste o tempero, se necessário.\n\n4. **Para Gratinado (opcional):**\n   - Transfira o macarrão com queijo para um refratário que possa ir ao forno.\n   - Polvilhe com o queijo parmesão ralado.\n   - Leve ao forno pré-aquecido a 200°C por 10-15 minutos ou até que a parte superior esteja dourada e borbulhante.\n\n5. **Sirva Quente:**\n   - Retire do forno (se gratinado) e sirva imediatamente enquanto está quente e o queijo está derretido e cremoso.\n\nEspero que você desfrute deste delicioso e reconfortante prato de macarrão com queijo clássico! Bon appétit!","logprobs":null}],
+"usage":
+{"completion_tokens":674,
+"prompt_tokens":133,
+"total_tokens":807,
+"completion_tokens_details":
+{"accepted_prediction_tokens":0,
+"audio_tokens":0,
+"reasoning_tokens":0,
+"rejected_prediction_tokens":0},
+"prompt_tokens_details":
+{"audio_tokens":0,
+"cached_tokens":0,
+"text_tokens":null,
+"image_tokens":null}}}
+

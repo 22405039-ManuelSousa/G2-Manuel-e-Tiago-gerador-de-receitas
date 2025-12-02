@@ -1,0 +1,35 @@
+DEBUG (JSON RAW):
+ {"id":"chatcmpl-CiJ9bz7jXOwSHd4shvuPuCKWvmcru","object":"text_completion","created":1764676095,"model":"gpt-4-turbo-2024-04-09",
+ "choices":[{"finish_reason":"stop","index":0,"text":"1. Espaguete à Puttanesca\n2. Pizza Napolitana com Anchovas\n3. Salada Mediterrânea de Massa\n4. Penne com Molho de Tomate e Alcaparras\n5. Tapenade de Azeitonas com Anchovas","logprobs":null}],
+ "usage":
+ {"completion_tokens":62,
+ "prompt_tokens":75,
+ "total_tokens":137,
+ "completion_tokens_details":
+ {"accepted_prediction_tokens":0,
+ "audio_tokens":0,
+ "reasoning_tokens":0,
+ "rejected_prediction_tokens":0},
+ "prompt_tokens_details":
+ {"audio_tokens":0,
+ "cached_tokens":0,
+ "text_tokens":null,
+ "image_tokens":null}}}
+
+DEBUG (JSON RAW):
+{"id":"chatcmpl-CiJ9nCVgjQrLin4kQM7Eksq4uYbCp","object":"text_completion","created":1764676107,"model":"gpt-4-turbo-2024-04-09",
+"choices":[{"finish_reason":"stop","index":0,"text":"### Receita de Espaguete à Puttanesca\n\n**Ingredientes:**\n\n- 400 g de espaguete\n- 2 colheres de sopa de azeite de oliva\n- 4 dentes de alho picados\n- 1 lata pequena de anchovas (aproximadamente 50 g), drenadas e picadas\n- 1/4 xícara de alcaparras\n- 1/2 xícara de azeitonas pretas sem caroço, picadas\n- 400 g de tomates pelados em conserva, picados (ou tomates frescos maduros)\n- 1 colher de chá de flocos de pimenta vermelha\n- Sal a gosto\n- Folhas de manjericão fresco, para enfeitar\n- Queijo parmesão ralado, para servir (opcional)\n\n**Modo de Preparo:**\n\n1. **Preparando os ingredientes:**\n   - Coloque uma panela grande de água salgada para ferver. Cozinhe o espaguete de acordo com as instruções da embalagem até ficar al dente. Reserve cerca de uma xícara da água do cozimento e escorra o restante.\n   - Enquanto a massa cozinha, prepare o molho.\n\n2. **Fazendo o molho:**\n   - Em uma grande frigideira, aqueça o azeite de oliva em fogo médio. Acrescente o alho picado e refogue por cerca de 1 minuto, até ficar fragrante.\n   - Adicione as anchovas picadas à frigideira e refogue por mais 2 minutos, mexendo ocasionalmente até que as anchovas comecem a se desfazer.\n   - Insira as alcaparras e as azeitonas picadas. Misture bem e cozinhe por mais alguns minutos.\n   - Adicione os tomates picados e os flocos de pimenta vermelha. Reduza o fogo para médio-baixo e deixe o molho cozinhar por cerca de 10 a 15 minutos, até que comece a engrossar.\n   - Ajuste o sal a gosto, mas cuidado pois as anchovas, alcaparras e azeitonas já são salgadas.\n\n3. **Finalizando o prato:**\n   - Adicione o espaguete cozido à frigideira com o molho. Misture bem para que toda a massa seja envolvida no molho. Se necessário, adicione um pouco da água reservada do cozimento para ajudar a integrar o molho à massa.\n   - Cozinhe por mais 1-2 minutos, permitindo que o espaguete absorva um pouco do molho.\n\n4. **Servindo:**\n   - Sirva imediatamente enquanto está quente. Enfeite com folhas de manjericão fresco e, se desejar, polvilhe com queijo parmesão ralado.\n\nEste prato clássico italiano é vibrante e cheio de sabor, perfeito para uma refeição rápida durante a semana ou para impressionar os convidados em um jantar informal.","logprobs":null}],
+"usage":
+{"completion_tokens":730,
+"prompt_tokens":147,
+"total_tokens":877,
+"completion_tokens_details":
+{"accepted_prediction_tokens":0,
+"audio_tokens":0,
+"reasoning_tokens":0,
+"rejected_prediction_tokens":0},
+"prompt_tokens_details":
+{"audio_tokens":0,
+"cached_tokens":0,
+"text_tokens":null,
+"image_tokens":null}}}
