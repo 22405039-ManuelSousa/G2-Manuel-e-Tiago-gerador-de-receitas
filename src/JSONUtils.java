@@ -25,6 +25,7 @@ public class JSONUtils {
                 case ':':
                     out.append(": ");
                     break;
+
                 default:
                     if (!Character.isWhitespace(c)) out.append(c);
             }
