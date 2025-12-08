@@ -1,6 +1,16 @@
-
+/**
+ * Utilitários simples para manipulação e extração de dados de JSON.
+ */
 public class JSONUtils {
 
+    /**
+     * Formata um JSON bruto em string de forma legível, adicionando indentação e quebras de linha.
+     * <p>
+     * Nota: Este método é básico e não valida a estrutura do JSON, apenas adiciona formatação.
+     *
+     * @param json JSON bruto em string
+     * @return JSON formatado com identação
+     */
     static String quickJSONFormater(String json) {
         StringBuilder out = new StringBuilder();
         boolean inStr = false, esc = false;
@@ -31,11 +41,18 @@ public class JSONUtils {
             }
         }
         return out.toString();
-
     }
 
-    // Very naive JSON string field extractor: "key": "value"
-    // Does not work if multiple sub-fields have the same key
+    /**
+     * Extrai o valor de uma chave de string em JSON simples do tipo `"key": "value"`.
+     * <p>
+     * Nota: Método muito simplificado, não funciona corretamente se houver múltiplos subcampos com a mesma chave
+     * ou se a estrutura JSON for complexa.
+     *
+     * @param json JSON em string
+     * @param key Chave cujo valor se quer extrair
+     * @return Valor da chave como string ou {@code null} se não existir
+     */
     static String getJsonString(String json, String key) {
         String pattern = "\"" + key + "\"";
         int keyPos = json.indexOf(pattern);
@@ -44,11 +61,11 @@ public class JSONUtils {
         int colonPos = json.indexOf(':', keyPos + pattern.length());
         if (colonPos < 0) return null;
 
-        // find opening quote of the value
+        // Encontrar a aspa de abertura do valor
         int firstQuote = json.indexOf('"', colonPos + 1);
         if (firstQuote < 0) return null;
 
-        // find closing quote (very naive, minimal escaping handling)
+        // Encontrar a aspa de fechamento (trata escape mínimo)
         int secondQuote = json.indexOf('"', firstQuote + 1);
         while (secondQuote > 0 && json.charAt(secondQuote - 1) == '\\') {
             secondQuote = json.indexOf('"', secondQuote + 1);
