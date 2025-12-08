@@ -34,8 +34,6 @@ public class JSONUtils {
 
     }
 
-    // Very naive JSON string field extractor: "key": "value"
-    // Does not work if multiple sub-fields have the same key
     static String getJsonString(String json, String key) {
         String pattern = "\"" + key + "\"";
         int keyPos = json.indexOf(pattern);
@@ -44,11 +42,9 @@ public class JSONUtils {
         int colonPos = json.indexOf(':', keyPos + pattern.length());
         if (colonPos < 0) return null;
 
-        // find opening quote of the value
         int firstQuote = json.indexOf('"', colonPos + 1);
         if (firstQuote < 0) return null;
 
-        // find closing quote (very naive, minimal escaping handling)
         int secondQuote = json.indexOf('"', firstQuote + 1);
         while (secondQuote > 0 && json.charAt(secondQuote - 1) == '\\') {
             secondQuote = json.indexOf('"', secondQuote + 1);

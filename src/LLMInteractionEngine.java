@@ -34,14 +34,12 @@ public class LLMInteractionEngine {
     }
 
     String buildJSON(String model, String prompt) {
-        // --- CORREÇÃO DO ERRO 400 ---
-        // É necessário escapar caracteres especiais (quebras de linha e aspas)
-        // para que o JSON enviado ao servidor seja válido.
+
         String escapedPrompt = prompt
-                .replace("\\", "\\\\")  // Escapar barras invertidas primeiro
-                .replace("\"", "\\\"")  // Escapar aspas duplas
-                .replace("\n", "\\n")  // Escapar quebra de linha
-                .replace("\r", "");    // Remover carriage return (Windows)
+                .replace("\\", "\\\\")
+                .replace("\"", "\\\"")
+                .replace("\n", "\\n")
+                .replace("\r", "");
 
         String json = "";
         json += "{";
@@ -55,17 +53,14 @@ public class LLMInteractionEngine {
         if(useHack) {
             return sendPrompt_Hack(prompt);
         }
-        // pedido normal
+
         HttpClient client = HttpClient.newHttpClient();
         String json = buildJSON(model, prompt);
         return sendRequestToClientAndGetReply(client, url, apiKey, json);
     }
 
-    // aplicar a martelada para passar por cima do problema dos certificados
     String sendPrompt_Hack(String prompt) throws IOException, InterruptedException, NoSuchAlgorithmException, KeyManagementException {
 
-        // *************
-        // hack por causa dos certificados
         SSLContext sc = SSLContext.getInstance("TLS");
         sc.init(null, new TrustManager[]{ new X509TrustManager() {
             public void checkClientTrusted(X509Certificate[] c, String a) {}
@@ -74,8 +69,7 @@ public class LLMInteractionEngine {
         }}, new SecureRandom());
 
         HttpClient insecureClient = HttpClient.newBuilder().sslContext(sc).build();
-        // fim do hack
-        // *************
+
 
         String json = buildJSON(model, prompt);
 
