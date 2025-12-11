@@ -1,27 +1,23 @@
-/**
- * Classe principal do projeto.
- * Inicializa o motor de interação com o LLM e o gerador de receitas.
- */
+import javax.swing.SwingUtilities;
+
 public class Main {
 
-    /** Chave da API fornecida pelo servidor */
     static String apiKey = "sk-pt9ku6hG-fCgiNUgotSVTw";
-
-    /** URL da API de LLM */
     static String url = "https://modelos.ai.ulusofona.pt/v1/completions";
-
-    /** Modelo de LLM a ser usado */
     static String model = "gpt-4-turbo";
-
-    /** Indica se deve usar o hack para certificados SSL */
     static boolean useHack = true;
 
-    /**
-     * Método principal que inicializa o motor de LLM e executa o gerador de receitas.
-     */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
+        // Inicializa o motor
         LLMInteractionEngine engine = new LLMInteractionEngine(url, apiKey, model, useHack);
+
+        // Inicializa a lógica
         LLMRecipeGenerator gerador = new LLMRecipeGenerator(engine);
-        gerador.executar();
+
+        // Interfaces Swing devem ser iniciadas na thread correta
+        SwingUtilities.invokeLater(() -> {
+            InterfaceGrafica gui = new InterfaceGrafica(gerador);
+            gui.setVisible(true);
+        });
     }
 }
